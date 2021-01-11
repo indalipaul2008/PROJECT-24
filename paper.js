@@ -6,7 +6,7 @@ class Paper{
         friction:0.5,
         density:1.2, 
     }
-    this.body = bodies.circle (x,y,radius,options)
+    this.body = Bodies.circle (x,y,radius,options)
     this. radius = radius
     
 
@@ -15,7 +15,7 @@ class Paper{
 
 display(){
 ellipseMode(RADIUS)
-fill("purple")
+fill("magenta")
 ellipse(this.body.position.x,this.body.position.y,this.radius)
 }
 }
